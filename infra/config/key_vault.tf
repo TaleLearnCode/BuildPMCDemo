@@ -10,6 +10,7 @@ module "key_vault" {
   }
 
   srv_comp_abbr       = var.srv_comp_abbr
+  name_suffix         = var.name_suffix
   environment         = var.environment
   location            = var.location
   resource_group_name = module.resource_group.resource_group.name
